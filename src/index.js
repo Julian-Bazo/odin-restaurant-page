@@ -39,3 +39,5 @@ homeButton.addEventListener("click", () => {
 })
 
 createHome();
+
+menuButton.click();
