@@ -1,5 +1,9 @@
 body {
-    background-color: aliceblue;
+    background-image: url("./globalbackground.jpg");
+    background-color: rgba(255,255,255,.7);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
 }
 
@@ -37,6 +41,7 @@ body {
     font-size: 4rem;
     margin-top: 1rem;
     font-weight: lighter;
+    margin-bottom: 0rem;
 }
 
 .bold {
@@ -55,14 +60,17 @@ body {
     padding: 1.5rem 2.5rem;
     border-radius: 1rem;
     border: solid black 2px;
-    margin-top: -2rem;
 }
 
-/* #menu:disabled {
-    background-color: white;
-    opacity: 1s;
-    color: black;
-    border-color: black;
-    cursor: not-allowed;
-} */
+img {
+    height: 20rem;
+    border-radius: 1rem;
+}
+
+.descriptive-text {
+    font-size: 1.5rem;
+    width: 45ch;
+    margin-left: .5rem;
+}
+
 

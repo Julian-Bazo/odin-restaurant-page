@@ -2,6 +2,7 @@ import "./styles.css";
 console.log("hello World");
 import createHome from "./home";
 import createMenu from "./menu";
+import createAbout from "./about";
 
 const contentDiv = document.querySelector("#content");
 const homeButton = document.querySelector("#home");
@@ -17,27 +18,16 @@ function clearWebpage() {
 menuButton.addEventListener("click", () => {
     clearWebpage();
     createMenu();
-
-    // menuButton.disabled = "true";
-
-    // if (homeButton.disabled === "true") {
-    //     homeButton.disabled = "false";
-    // }
-    // if (aboutButton.disabled === "true") {
-    //     aboutButton.disabled = "false";
-    // }
 });
 
 homeButton.addEventListener("click", () => {
     clearWebpage();
     createHome();
+})
 
-    // homeButton.disabled = "true";
-
-    
-
+aboutButton.addEventListener("click", () => {
+    clearWebpage();
+    createAbout();
 })
 
 createHome();
-
-menuButton.click();
