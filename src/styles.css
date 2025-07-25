@@ -1,5 +1,6 @@
 body {
     background-color: aliceblue;
+    margin: 0;
 }
 
 #content {
@@ -13,6 +14,9 @@ body {
 .header {
     display: flex;
     justify-content: center;
+    background-color: black;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .main-nav {
@@ -20,8 +24,25 @@ body {
     gap: 2rem;
 }
 
-.main-nav button {
+#home, #menu, #about {
     font-size: 1.5rem;
     padding: .5rem 1.5rem;
     border-radius: 1rem;
+    background-color: white;
+    cursor: pointer;
 }
+
+.top-type {
+    font-size: 4rem;
+    margin-top: 1rem;
+    font-weight: lighter;
+}
+
+/* #menu:disabled {
+    background-color: white;
+    opacity: 1s;
+    color: black;
+    border-color: black;
+    cursor: not-allowed;
+} */
+
